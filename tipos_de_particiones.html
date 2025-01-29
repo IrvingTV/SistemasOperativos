@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Tipos de particiones | Sistemas Operativos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irving Torres Viveros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas Operativos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas Operativos</a></li>
+   <li><a href="introduccin_a_sistemas_operativos.html" class="daddy">Introducción a Sistemas Operativos</a>
+   <ul class="other-section">
+      <li><a href="evolucin_de_los_sistemas_operativos.html" class="no-ch">Evolución de los sistemas operativos.</a></li>
+      <li><a href="tipos_de_licenciamiento.html" class="no-ch">Tipos de licenciamiento</a></li>
+      <li><a href="software_de_cdigo_abierto.html" class="no-ch">Software de código abierto</a></li>
+      <li><a href="fundamentos_de_so.html" class="no-ch">Fundamentos de SO</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="instalacin_de_sistemas_operativos.html" class="current-page-parent daddy">Instalación de sistemas operativos</a>
+   <ul>
+      <li><a href="requerimientos_del_sistema_operativo.html" class="no-ch">Requerimientos del sistema operativo</a></li>
+      <li><a href="fundamentos_de_hardware.html" class="no-ch">Fundamentos de hardware</a></li>
+      <li id="active"><a href="tipos_de_particiones.html" class="active no-ch">Tipos de particiones</a></li>
+      <li><a href="sistemas_de_archivos_y_formatos.html" class="no-ch">Sistemas de archivos y formatos</a></li>
+      <li><a href="sistemas_de_arreglos_de_discos_duros_redundantes.html" class="no-ch">Sistemas de arreglos de discos duros redundantes</a></li>
+      <li><a href="instalacin_de_sistema_operativo.html" class="no-ch">Instalación de sistema operativo</a></li>
+      <li><a href="proyecto_implementacin_de_un_sistema_operativo_en_virtualbox.html" class="no-ch">Proyecto: Implementación de un Sistema Operativo en VirtualBox</a></li>
+   </ul>
+   </li>
+   <li><a href="comandos_bsicos_de_sistemas_operativos.html" class="daddy">Comandos básicos de sistemas operativos</a>
+   <ul class="other-section">
+      <li><a href="lnea_de_comandos.html" class="no-ch">Línea de comandos</a></li>
+      <li><a href="gestin_de_archivos_y_directorios.html" class="no-ch">Gestión de archivos y directorios</a></li>
+      <li><a href="gestin_de_repositorios.html" class="no-ch">Gestión de repositorios</a></li>
+      <li><a href="empacamiento_y_compresin.html" class="no-ch">Empacamiento y compresión</a></li>
+      <li><a href="configuracin_de_la_tarjeta_de_red.html" class="no-ch">Configuración de la tarjeta de red</a></li>
+   </ul>
+   </li>
+   <li><a href="administracin_bsica_del_sistema_operativo.html" class="daddy">Administración básica del sistema operativo</a>
+   <ul class="other-section">
+      <li><a href="gestin_de_usuarios_y_grupos.html" class="no-ch">Gestión de usuarios y grupos</a></li>
+      <li><a href="permisos_especiales_superusuario.html" class="no-ch">Permisos especiales (superusuario)</a></li>
+      <li><a href="respaldo_de_configuraciones.html" class="no-ch">Respaldo de configuraciones</a></li>
+      <li><a href="respaldo_de_configuraciones0.html" class="no-ch">Respaldo de configuraciones</a></li>
+      <li><a href="polticas_de_seguridad.html" class="no-ch">Políticas de seguridad</a></li>
+      <li><a href="estndares_para_la_solucin_de_problemas.html" class="no-ch">Estándares para la solución de problemas</a></li>
+      <li><a href="bitcora_de_pruebas.html" class="no-ch">Bitácora de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="instalacin_de_servicios_para_aplicaciones_web.html" class="daddy">Instalación de servicios para aplicaciones web</a>
+   <ul class="other-section">
+      <li><a href="windows_subsystem_for_linux.html" class="no-ch">Windows subsystem for linux</a></li>
+      <li><a href="configuracin_de_servidores_dns_dhcp_correos_web_ftp_tftp_ssh.html" class="no-ch">Configuración de Servidores DNS, DHCP, correos, web, FTP, TFTP, SSH</a></li>
+      <li><a href="monitoreo_de_red.html" class="no-ch">Monitoreo de red</a></li>
+      <li><a href="actualizacin_y_migracin_de_equipos_y_servicios.html" class="no-ch">Actualización y migración de equipos y servicios</a></li>
+      <li><a href="scripts_bsicos_y_automatizacin.html" class="no-ch">Scripts básicos y automatización</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="fundamentos_de_hardware.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sistemas_de_archivos_y_formatos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Tipos de particiones</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Qué es una partición</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_125_2" class="block iDevice_content">
+<div class="exe-text"><p>Nombre que se le da a cada división presente en una sola unidad física de almacenamiento de datos. Para que se entienda, tener varias particiones es como tener varios discos duros en un solo disco duro físico, cada uno con su sistema de archivos y funcionando de manera diferente.</p>
+<p>Las particiones pueden utilizarse para varios fines. Por una parte, puedes tener una dedicada a guardar datos sensibles con medidas de seguridad que no interfieran en el resto del sistema, así como copias de seguridad, aunque también puedes utilizarla para instalar diferentes sistemas operativos. En algunos de ellos, como los basados en GNU/Linux, también podrás estructurar el disco en particiones para los diferentes tipos de archivo que utilice el sistema operativo.</p>
+<p>Existen tres tipos de particiones, las primarias, las extendidas o secundarias, y las lógicas</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Tipos de particiones de disco duro </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_120_2" class="block iDevice_content">
+<div class="exe-text"><p>El formato o sistema de archivo de una partición (por ejemplo NTFS) no debe ser confundido con el tipo de partición (por ejemplo “partición primaria”), ya que en realidad no tienen directamente mucho que ver.</p>
+<p><img src="image060.jpg" width="666" height="194" alt="Participación de Discos Duros" /></p>
+<p>Independientemente del sistema de archivos de una partición (FAT, NTFS, ext3, ext4, etc.), si se habla de un disco duro que use MBR, existen 3 tipos diferentes de particiones:</p>
+<ul>
+<li><strong>Partición primaria</strong>. Son las divisiones primarias del disco que dependen de una tabla de particiones, y son las que detecta el ordenador al arrancar, por lo que es en ellas donde se instalan los sistemas operativos. Puede haber un máximo de cuatro, y prácticamente cualquier sistema operativo las detectará y asignará una unidad siempre y cuando utilicen un sistema de archivo compatible. Un disco duro completamente formateado contiene en realidad una partición primaria ocupando todo su espacio.. Un disco duro físico completamente formateado (por ejemplo, una unidad de disco duro externa USB nueva) consiste, en realidad, en una partición primaria que ocupa todo el espacio del disco y posee un sistema de archivos. Prácticamente, cualquier sistema operativo puede detectar este tipo de particiones primarias, y asignarles una unidad, siempre y cuando el sistema operativo reconozca su formato (sistema de archivos).</li>
+</ul>
+<p><img src="image061.jpg" width="666" height="194" alt="Ejemplo partición Primaria" /></p>
+<p><img src="image062.jpg" width="666" height="194" alt="Ejemplo disco duro con 4 partición primaria" /></p>
+<p>La<strong> partición primaria</strong> puede ser reconocida como una partición de arranque y puede contener un sistema operativo que realice el arranque del equipo. Una de las particiones primarias se llama la partición activa y es la de arranque. El ordenador busca en esa <strong>partición activa</strong> el arranque del sistema. Cuando hay varios sistemas operativos instalados la partición activa tiene un pequeño programa llamado <strong>gestor de arranque</strong> que presenta un pequeño menú que permite elegir qué sistema operativo se arranca.</p>
+<p><img src="image063.jpg" width="666" height="439" alt="Ejemplo gestor de arranque" /></p>
+<p>• <strong>Partición extendida</strong>. También conocida como partición secundaria, es otro tipo de partición que actúa como una partición primaria; sirve para contener múltiples unidades lógicas en su interior. Fue ideada para romper la limitación de 4 particiones primarias en un solo disco físico. Solo puede existir una partición de este tipo por disco, y solo sirve para contener particiones lógicas. Por lo tanto, es el único tipo de partición que no soporta un sistema de archivos directamente. Fue ideada para poder tener más de cuatro particiones en un disco duro, aunque en ella no se puede instalar un sistema operativo. Esto quiere decir que sólo la podremos usar para almacenar datos. Sólo puede haber una de ellas, aunque dentro podremos hacer tantas otras particiones como queramos. Si utilizas esta partición, el disco sólo podrá tener tres primarias, siendo la extendida la que actúe como cuarta.</p>
+<p><img src="image064.jpg" width="666" height="194" alt="Ejemplo disco Duro con partición Extendida" /></p>
+<p></p>
+<p><img src="image065.jpg" width="672" height="195" alt="Ejemplo partición Disco Duro con tres particiones primarias y cuatro extendidas." /></p>
+<p></p>
+<p>• <strong>Partición lógica.</strong> Ocupa una porción de la partición extendida o la totalidad de la misma, y se ha formateado con un tipo específico de sistema de archivos (FAT32, NTFS, ext3, ext4, etc.) y se le ha asignado una unidad, así el sistema operativo reconoce las particiones lógicas o su sistema de archivos. Se pueden tener un máximo de 23 particiones lógicas en una partición extendida. Funcionan como si fueran dispositivos independientes, y puedes utilizarla para almacenar cualqueir archivo. Aunque algunos sistemas operativos pueden ser más restrictivos, como Linux que impone un máximo de 15, incluyendo las 4 primarias, en discos SCSI y en discos IDE 8963.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">SSD vs HDD</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_123_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><iframe width="480" height="270" src="https://www.dailymotion.com/embed/video/x80axs3"></iframe></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">MBR versus GPT </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_126_2" class="block iDevice_content">
+<div class="exe-text"><p>El número de particiones que puede <em>crear en un disco básico depende del estilo de partición del disco</em>:</p>
+<p>• En los discos con registro de inicio maestro (<strong>MBR</strong>) se pueden crear hasta cuatro particiones primarias por disco o bien se pueden crear hasta tres particiones primarias y una partición extendida. Dentro de la partición extendida se pueden crear un número ilimitado de unidades lógicas.</p>
+<p>• En los discos con tabla de particiones GUID (<strong>GPT</strong>) se pueden crear hasta 128 particiones primarias. Con GPT no existe la limitación a cuatro particiones primarias por lo que no es necesario crear particiones extendidas ni unidades lógicas.</p>
+<p>El estilo de creación de particiones de disco GPT (“GUID <em>partition table</em>” o “tabla de particiones GUI”) admite volúmenes de un tamaño máximo de 18 exabytes, que en comparación con el estilo de creación de particiones en disco con MBR que admite volúmenes de un tamaño máximo de 2 terabytes y hasta 4 particiones primarias por disco (o tres particiones primarias, una partición extendida y un número ilimitado de unidades lógicas) es muy superior.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Referencias</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_124_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://www.dailymotion.com/video/x80axs3">https://www.dailymotion.com/video/x80axs3</a></p>
+<p><a href="https://www.carm.es/edu/pub/04_2015/2_5_2_contenido.html">https://www.carm.es/edu/pub/04_2015/2_5_2_contenido.html</a> </p>
+<p>https://www.carm.es/edu/pub/04_2015/2_5_3_contenido.html</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id15">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Tipos de particiones que se utilizan en Linux </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Los usuarios de Linux con experiencia utilizan una combinación de algunas de estas particiones como un esquema.  Estas particiones específicas permiten que sea más fácil y eficiente. Enumero la combinación de particiones que son necesarias para la instalación genérica más común.</p>
+<p></p>
+<table border="1" style="width: 100%; height: 302px;">
+<tbody>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/</td>
+<td style="width: 92.0752%; height: 23px;">La barra / solo representa la raíz del árbol del sistema de archivos.</td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 7.92484%; height: 47px;">/bin</td>
+<td style="width: 92.0752%; height: 47px;">Esto significa binarios y contiene las utilidades fundamentales que necesitan todos los usuarios.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/boot</td>
+<td style="width: 92.0752%; height: 23px;">Contiene todos los archivos que son necesarios para el proceso de arranque.</td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 7.92484%; height: 47px;">/dev</td>
+<td style="width: 92.0752%; height: 47px;">Esto representa los dispositivos que contienen los archivos de los dispositivos periféricos y los pseudodispositivos.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/etc</td>
+<td style="width: 92.0752%; height: 23px;">Contiene archivos de configuración de la computadora y sus bases de datos.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/home</td>
+<td style="width: 92.0752%; height: 23px;">Esto contiene todos los directorios principales para los usuarios.</td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 7.92484%; height: 47px;">/lib</td>
+<td style="width: 92.0752%; height: 47px;">Se trata de las bibliotecas del sistema y tienen archivos como los módulos del kernel y los controladores de dispositivos.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/lib64</td>
+<td style="width: 92.0752%; height: 23px;">Se trata de las bibliotecas del sistema y tienen archivos como los módulos del kernel y los controladores de dispositivos para las computadoras de 64 bits.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/media</td>
+<td style="width: 92.0752%; height: 23px;">Este es el punto de montaje predeterminado para dispositivos extraíbles como unidades USB y reproductores de medios.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 7.92484%; height: 23px;">/mnt</td>
+<td style="width: 92.0752%; height: 23px;">Esto hace referencia a un montaje y contiene puntos de montaje del sistema de archivos. Se utiliza para varios discos duros, varias particiones, sistemas de archivos de red y CD ROM, entre otros.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/opt</td>
+<td style="width: 92.0752%;">Contiene software de complemento, y los programas más grandes se pueden instalar aquí en vez de en /usr</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/proc</td>
+<td style="width: 92.0752%;">Esto contiene sistemas de archivos virtuales en los que se describe la información de los procesos como archivos.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/sbin</td>
+<td style="width: 92.0752%;">Esto representa los binarios del sistema y contiene las utilidades fundamentales que son necesarias para iniciar, mantener y recuperar la computadora.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/root</td>
+<td style="width: 92.0752%;">Esta es la ubicación de inicio de la raíz del administrador de la computadora. Este directorio principal de cuentas suele ser la raíz de la primera partición.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/srv</td>
+<td style="width: 92.0752%;">Estos son los datos del servidor, los que corresponden a los datos que la computadora proporciona para los servicios.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/sys</td>
+<td style="width: 92.0752%;">Contiene un sistema de archivos virtual sysfs que guarda información relacionada con el sistema operativo del hardware.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/tmp</td>
+<td style="width: 92.0752%;">Este es un lugar para archivos temporales. tmpfs que está montado en él o los scripts al inicio, generalmente, eliminan esto en el arranque.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/usr</td>
+<td style="width: 92.0752%;">Esto contiene los archivos ejecutables y los recursos compartidos que no son críticos del sistema.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/var</td>
+<td style="width: 92.0752%;">Esto significa variable y es un espacio para los archivos que están en un estado cambiante. Por ejemplo, archivos con tamaño que aumenta y disminuye.</td>
+</tr>
+<tr>
+<td style="width: 7.92484%;">/swap</td>
+<td style="width: 92.0752%;">La partición de intercambio es donde se extiende la memoria del sistema, ya que se dedica parte del disco duro a esta.</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id51">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">Actividad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta51_157_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2>Cuadro comparativo</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul>
+<li>Llenar de el cuadro según corresponda.</li>
+</ul>
+<table border="1" style="width: 100.002%; height: 92px;">
+<tbody>
+<tr style="height: 23px;">
+<td style="width: 16.6667%;"><strong>Sistema Operativo</strong></td>
+<td style="width: 16.6667%; height: 23px;"><strong>Nombre de la partición&nbsp;</strong></td>
+<td style="width: 33.3333%; height: 23px;"><strong>Descripción&nbsp;</strong></td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 16.6667%;"></td>
+<td style="width: 16.6667%; height: 23px;"></td>
+<td style="width: 33.3333%; height: 23px;"></td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 16.6667%;"></td>
+<td style="width: 16.6667%; height: 23px;"></td>
+<td style="width: 33.3333%; height: 23px;"></td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 16.6667%;"></td>
+<td style="width: 16.6667%; height: 23px;"></td>
+<td style="width: 33.3333%; height: 23px;"></td>
+</tr>
+</tbody>
+</table></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><h2 class="wp-block-heading" id="como-hacer-un-cuadro-comparativo">¿Cómo hacer un cuadro comparativo?</h2>
+<p>Los principales pasos para hacer un cuadro comparativo son:</p>
+<ol class="wp-block-list" start="1">
+<li><strong>Buscar información</strong>. Se deben consultar fuentes confiables, para contar con información clara y verificada, que permita conocer a fondo cada uno de los elementos a analizar y las variables o características que los identifican.</li>
+<li><strong>Identificar los elementos a comparar</strong>. Antes de comenzar a confeccionar el cuadro, se debe saber cuáles y cuántos elementos van a ser comparados.</li>
+<li><strong>Determinar las variables o categorías</strong>. Se deben investigar y anotar qué variables o características se van a comparar. ¿Se van a buscar sus semejanzas? ¿Sus diferencias? ¿Las características principales de cada uno?</li>
+<li><strong>Hacer una lista de las características</strong>. Teniendo en cuenta las variables o las categorías, se debe anotar cómo cada característica se presenta en cada elemento.</li>
+<li><strong>Confeccionar el cuadro</strong>. Se debe trazar un cuadro en la hoja y luego dividirlo en tantas partes como elementos y características se quieran comparar. En el recuadro superior de cada una de esas columnas, se deben anotar los nombres de aquellos elementos a comparar. Debajo de cada nombre se escriben las características, semejanzas o diferencias, cada una en un recuadro. En el caso de los cuadros comparativos de matriz, se debe incluir una columna a la izquierda, destinada a identificar las variables o las categorías de comparación.</li>
+<li><strong>Obtener conclusiones</strong>. Una vez confeccionado el cuadro, se puede analizar y comparar ítem por ítem para extraer<span>&nbsp;</span><a href="https://concepto.de/conclusion/">conclusiones</a><span>&nbsp;</span>sobre el tema de estudio.</li>
+</ol>
+<p><span><br><br>Fuente:&nbsp;<a href="https://concepto.de/cuadro-comparativo/#ixzz8yeuIllak">https://concepto.de/cuadro-comparativo/#ixzz8yeuIllak</a></span></p>
+<p><br>Fuente:&nbsp;https://concepto.de/cuadro-comparativo/#ixzz8yetMakPW</p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="https://concepto.de/wp-content/uploads/2024/06/2-Cuadro-comparativo-estructura.jpg"></p>
+<p><img src="img1.png" width="994" height="575" alt="Cuadro comparativo tabular" style="display: block; margin-left: auto; margin-right: auto;"></p>
+
+<p><img src="img2.png" width="819" height="739" alt="Cuadro comparativo matriz" style="display: block; margin-left: auto; margin-right: auto;"></p>
+
+<button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="fundamentos_de_hardware.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sistemas_de_archivos_y_formatos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
