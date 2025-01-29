@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Fundamentos de hardware | Sistemas Operativos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irving Torres Viveros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas Operativos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas Operativos</a></li>
+   <li><a href="introduccin_a_sistemas_operativos.html" class="daddy">Introducción a Sistemas Operativos</a>
+   <ul class="other-section">
+      <li><a href="evolucin_de_los_sistemas_operativos.html" class="no-ch">Evolución de los sistemas operativos.</a></li>
+      <li><a href="tipos_de_licenciamiento.html" class="no-ch">Tipos de licenciamiento</a></li>
+      <li><a href="software_de_cdigo_abierto.html" class="no-ch">Software de código abierto</a></li>
+      <li><a href="fundamentos_de_so.html" class="no-ch">Fundamentos de SO</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="instalacin_de_sistemas_operativos.html" class="current-page-parent daddy">Instalación de sistemas operativos</a>
+   <ul>
+      <li><a href="requerimientos_del_sistema_operativo.html" class="no-ch">Requerimientos del sistema operativo</a></li>
+      <li id="active"><a href="fundamentos_de_hardware.html" class="active no-ch">Fundamentos de hardware</a></li>
+      <li><a href="tipos_de_particiones.html" class="no-ch">Tipos de particiones</a></li>
+      <li><a href="sistemas_de_archivos_y_formatos.html" class="no-ch">Sistemas de archivos y formatos</a></li>
+      <li><a href="sistemas_de_arreglos_de_discos_duros_redundantes.html" class="no-ch">Sistemas de arreglos de discos duros redundantes</a></li>
+      <li><a href="instalacin_de_sistema_operativo.html" class="no-ch">Instalación de sistema operativo</a></li>
+      <li><a href="proyecto_implementacin_de_un_sistema_operativo_en_virtualbox.html" class="no-ch">Proyecto: Implementación de un Sistema Operativo en VirtualBox</a></li>
+   </ul>
+   </li>
+   <li><a href="comandos_bsicos_de_sistemas_operativos.html" class="daddy">Comandos básicos de sistemas operativos</a>
+   <ul class="other-section">
+      <li><a href="lnea_de_comandos.html" class="no-ch">Línea de comandos</a></li>
+      <li><a href="gestin_de_archivos_y_directorios.html" class="no-ch">Gestión de archivos y directorios</a></li>
+      <li><a href="gestin_de_repositorios.html" class="no-ch">Gestión de repositorios</a></li>
+      <li><a href="empacamiento_y_compresin.html" class="no-ch">Empacamiento y compresión</a></li>
+      <li><a href="configuracin_de_la_tarjeta_de_red.html" class="no-ch">Configuración de la tarjeta de red</a></li>
+   </ul>
+   </li>
+   <li><a href="administracin_bsica_del_sistema_operativo.html" class="daddy">Administración básica del sistema operativo</a>
+   <ul class="other-section">
+      <li><a href="gestin_de_usuarios_y_grupos.html" class="no-ch">Gestión de usuarios y grupos</a></li>
+      <li><a href="permisos_especiales_superusuario.html" class="no-ch">Permisos especiales (superusuario)</a></li>
+      <li><a href="respaldo_de_configuraciones.html" class="no-ch">Respaldo de configuraciones</a></li>
+      <li><a href="respaldo_de_configuraciones0.html" class="no-ch">Respaldo de configuraciones</a></li>
+      <li><a href="polticas_de_seguridad.html" class="no-ch">Políticas de seguridad</a></li>
+      <li><a href="estndares_para_la_solucin_de_problemas.html" class="no-ch">Estándares para la solución de problemas</a></li>
+      <li><a href="bitcora_de_pruebas.html" class="no-ch">Bitácora de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="instalacin_de_servicios_para_aplicaciones_web.html" class="daddy">Instalación de servicios para aplicaciones web</a>
+   <ul class="other-section">
+      <li><a href="windows_subsystem_for_linux.html" class="no-ch">Windows subsystem for linux</a></li>
+      <li><a href="configuracin_de_servidores_dns_dhcp_correos_web_ftp_tftp_ssh.html" class="no-ch">Configuración de Servidores DNS, DHCP, correos, web, FTP, TFTP, SSH</a></li>
+      <li><a href="monitoreo_de_red.html" class="no-ch">Monitoreo de red</a></li>
+      <li><a href="actualizacin_y_migracin_de_equipos_y_servicios.html" class="no-ch">Actualización y migración de equipos y servicios</a></li>
+      <li><a href="scripts_bsicos_y_automatizacin.html" class="no-ch">Scripts básicos y automatización</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="requerimientos_del_sistema_operativo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tipos_de_particiones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Fundamentos de hardware</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id64">
+<div class="iDevice emphasis0" >
+<div id="ta64_187_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>Unidad Central de Procesamiento (CPU)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 5 []">
+<li>
+<p><span>Es el cerebro del sistema, encargado de ejecutar instrucciones y gestionar los procesos.</span></p>
+</li>
+<li>
+<p><span>Características clave:</span></p>
+<ul data-spread="false">
+<li>
+<p><span><strong>Frecuencia de reloj</strong></span><span>: Medida en GHz, indica la velocidad de ejecución de instrucciones.</span></p>
+</li>
+<li>
+<p><span><strong>Número de núcleos e hilos</strong></span><span>: Un mayor número permite una mejor capacidad de multitarea y rendimiento en aplicaciones paralelas.</span></p>
+</li>
+<li>
+<p><span><strong>Caché</strong></span><span>: Memoria interna de alta velocidad que reduce la latencia de acceso a datos.</span></p>
+</li>
+<li>
+<p><span><strong>Arquitectura</strong></span><span>: 32-bit o 64-bit, lo que determina la compatibilidad con sistemas operativos y software.</span></p>
+</li>
+<li>
+<p><span><strong>TDP (Thermal Design Power)</strong></span><span>: Cantidad de calor generada por el procesador y su impacto en la refrigeración del sistema</span></p>
+</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Memoria RAM</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 5 []">
+<li>
+<p><span>Es un tipo de memoria volátil que almacena datos temporalmente para su procesamiento rápido.</span></p>
+</li>
+<li>
+<p><span>Tipos principales:</span></p>
+<ul data-spread="false">
+<li>
+<p><span><strong>DDR3, DDR4, DDR5</strong></span><span>: Diferentes generaciones con mejoras en velocidad y eficiencia energética.</span></p>
+</li>
+<li>
+<p><span><strong>Capacidad</strong></span><span>: 4 GB (básico), 8-16 GB (ofimática y multimedia), 32 GB o más (gaming y edición profesional).</span></p>
+</li>
+<li>
+<p><span><strong>Frecuencia (MHz)</strong></span><span>: Cuanto mayor sea la frecuencia, mejor será el rendimiento.</span></p>
+</li>
+<li>
+<p><span><strong>Latencia</strong></span><span>: Cuanto menor sea la latencia, más rápido responderá la memoria.</span></p>
+</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>Almacenamiento</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 5 []">
+<li>
+<p><span>Dispositivos utilizados para almacenar datos de manera permanente.</span></p>
+</li>
+<li>
+<p><span>Tipos principales:</span></p>
+<ul data-spread="false">
+<li>
+<p><span><strong>HDD (Disco Duro Mecánico)</strong></span><span>: Mayor capacidad de almacenamiento a menor costo, pero con velocidades reducidas.</span></p>
+</li>
+<li>
+<p><span><strong>SSD (Unidad de Estado Sólido)</strong></span><span>: Más rápido que los HDD, con menor consumo energético y mayor resistencia.</span></p>
+</li>
+<li>
+<p><span><strong>NVMe (Non-Volatile Memory Express)</strong></span><span>: Ofrece velocidades de transferencia significativamente más altas que los SSD SATA.</span></p>
+</li>
+<li>
+<p><span><strong>RAID (Redundant Array of Independent Disks)</strong></span><span>: Configuración para redundancia y velocidad en entornos empresariales.</span></p>
+</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Tarjeta Gráfica (GPU)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 5 []">
+<li>
+<p><span>Responsables del procesamiento de gráficos y cálculos complejos en aplicaciones específicas.</span></p>
+</li>
+<li>
+<p><span>Tipos principales:</span></p>
+<ul data-spread="false">
+<li>
+<p><span><strong>Integrada</strong></span><span>: Incorporada en la CPU, adecuada para tareas básicas como navegación web y ofimática.</span></p>
+</li>
+<li>
+<p><span><strong>Dedicada</strong></span><span>: Tarjetas gráficas independientes con mayor potencia, necesarias para gaming, diseño 3D y aprendizaje profundo.</span></p>
+</li>
+<li>
+<p><span><strong>Memoria VRAM</strong></span><span>: Cuanta más VRAM tenga una GPU, mejor podrá manejar cargas de trabajo gráficas intensivas.</span></p>
+</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>Placa Base (Motherboard)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 5 []">
+<li>
+<p><span>Es el circuito principal que conecta todos los componentes del sistema.</span></p>
+</li>
+<li>
+<p><span>Características clave:</span></p>
+<ul data-spread="false">
+<li>
+<p><span><strong>Socket del procesador</strong></span><span>: Determina la compatibilidad con ciertos modelos de CPU.</span></p>
+</li>
+<li>
+<p><span><strong>Ranuras de RAM</strong></span><span>: Cantidad y tipo de módulos de memoria admitidos.</span></p>
+</li>
+<li>
+<p><span><strong>Puertos de expansión (PCIe, M.2)</strong></span><span>: Para tarjetas gráficas, almacenamiento adicional y otros periféricos.</span></p>
+</li>
+<li>
+<p><span><strong>Conectividad</strong></span><span>: USB, HDMI, Ethernet, Wi-Fi, Bluetooth, entre otros.</span></p>
+</li>
+<li>
+<p><span><strong>Chipset</strong></span><span>: Determina las capacidades y limitaciones de la placa base.</span></p>
+</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Fuente de Alimentación (PSU)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 5 []">
+<li>
+<p><span>Suministra energía a todos los componentes del sistema.</span></p>
+</li>
+<li>
+<p><span>Consideraciones clave:</span></p>
+<ul data-spread="false">
+<li>
+<p><span><strong>Potencia (Wattage)</strong></span><span>: Debe ser suficiente para todos los dispositivos.</span></p>
+</li>
+<li>
+<p><span><strong>Certificación de eficiencia</strong></span><span>: 80 Plus (Bronze, Silver, Gold, Platinum, Titanium) indica el nivel de eficiencia energética.</span></p>
+</li>
+<li>
+<p><span><strong>Modularidad</strong></span><span>: Las fuentes de alimentación modulares permiten una mejor gestión de cables dentro del gabinete.</span></p>
+</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>Dispositivos de Entrada y Salida</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul data-spread="false" data-pm-slice="3 3 []">
+<li>
+<p><span><strong>Entrada</strong></span><span>: Teclado, ratón, escáner, micrófono, cámara.</span></p>
+</li>
+<li>
+<p><span><strong>Salida</strong></span><span>: Monitor, impresora, altavoces.</span></p>
+</li>
+<li>
+<p><span><strong>Periféricos adicionales</strong></span><span>: Tabletas gráficas, joysticks, mandos de videojuegos, entre otros.</span></p>
+</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_ejemplo" id="id65">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_ejemplo.svg)"><h1 class="iDeviceTitle">Piensa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta65_188_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2>Hardware Según la Aplicación</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El hardware adecuado dependerá del uso específico del sistema. A continuación, se presenta una tabla con recomendaciones generales:</p>
+<table border="1" style="width: 100%; height: 137px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20%; height: 22px;"><strong>Aplicación</strong></td>
+<td style="width: 20%; height: 22px;"><strong>CPU</strong></td>
+<td style="width: 20%; height: 22px;"><strong>RAM</strong></td>
+<td style="width: 20%; height: 22px;"><strong>Almacenamiento</strong></td>
+<td style="width: 20%; height: 22px;"><strong>GPU</strong></td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">Oficina y navegación web</td>
+<td style="width: 20%; height: 23px;">Intel i3 / Ryzen 3</td>
+<td style="width: 20%; height: 23px;">8 GB</td>
+<td style="width: 20%; height: 23px;">SSD 256 GB</td>
+<td style="width: 20%; height: 23px;">Integrada</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">Edición multimedia</td>
+<td style="width: 20%; height: 23px;">Intel i5 / Ryzen 5</td>
+<td style="width: 20%; height: 23px;">16 GB</td>
+<td style="width: 20%; height: 23px;">SSD 512 GB + HDD 1 TB</td>
+<td style="width: 20%; height: 23px;">Dedicada</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">Gaming</td>
+<td style="width: 20%; height: 23px;">Intel i7 / Ryzen 7</td>
+<td style="width: 20%; height: 23px;">16-32 GB</td>
+<td style="width: 20%; height: 23px;">SSD NVMe 1 TB</td>
+<td style="width: 20%; height: 23px;">&nbsp;<br>Dedicada</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">Servidores</td>
+<td style="width: 20%; height: 23px;">Xeon / EPYC</td>
+<td style="width: 20%; height: 23px;">32+ GB</td>
+<td style="width: 20%; height: 23px;">RAID con SSD y HDD</td>
+<td style="width: 20%; height: 23px;">Depende del uso</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">IA y Ciencia de Datos</td>
+<td style="width: 20%; height: 23px;">Ryzen 9 / Intel i9</td>
+<td style="width: 20%; height: 23px;">64+ GB</td>
+<td style="width: 20%; height: 23px;">SSD NVMe 2 TB</td>
+<td style="width: 20%; height: 23px;">RTX 3090 / A100</td>
+</tr>
+</tbody>
+</table></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id66">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Fuentes de Información</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta66_189_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Documentación de fabricantes como Intel, AMD, NVIDIA, ASUS, MSI.</li>
+<li>Sitios web especializados en hardware:
+<ul>
+<li>Tom's Hardware (https://www.tomshardware.com)</li>
+<li>AnandTech (https://www.anandtech.com)</li>
+<li>PC Part Picker (https://pcpartpicker.com)</li>
+</ul>
+</li>
+<li>Manuales técnicos y foros de hardware como Reddit (r/buildapc).</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="requerimientos_del_sistema_operativo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tipos_de_particiones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
