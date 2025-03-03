@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>III.1 Línea de comandos | Sistemas Operativos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irving Torres Viveros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas Operativos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas Operativos</a></li>
+   <li><a href="i_introduccin_a_sistemas_operativos.html" class="daddy">I. Introducción a Sistemas Operativos</a>
+   <ul class="other-section">
+      <li><a href="11_evolucin_de_los_sistemas_operativos.html" class="no-ch">1.1 Evolución de los sistemas operativos.</a></li>
+      <li><a href="actividad_11_lnea_de_tiempo.html" class="no-ch">Actividad 1.1 Línea de Tiempo</a></li>
+      <li><a href="12_tipos_de_licenciamiento.html" class="no-ch">1.2 Tipos de licenciamiento</a></li>
+      <li><a href="13_software_de_cdigo_abierto.html" class="no-ch">1.3 Software de código abierto</a></li>
+      <li><a href="14_fundamentos_de_so.html" class="no-ch">1.4 Fundamentos de SO</a></li>
+      <li><a href="actividad_12_cuadro_comparativo.html" class="no-ch">Actividad 1.2 Cuadro Comparativo</a></li>
+   </ul>
+   </li>
+   <li><a href="ii_instalacin_de_sistemas_operativos.html" class="daddy">II. Instalación de sistemas operativos</a>
+   <ul class="other-section">
+      <li><a href="ii1_requerimientos_del_sistema_operativo.html" class="no-ch">II.1 Requerimientos del sistema operativo</a></li>
+      <li><a href="ii2_fundamentos_de_hardware.html" class="no-ch">II.2 Fundamentos de hardware</a></li>
+      <li><a href="ii3_tipos_de_particiones.html" class="no-ch">II.3 Tipos de particiones</a></li>
+      <li><a href="ii4_sistemas_de_archivos_y_formatos.html" class="no-ch">II.4 Sistemas de archivos y formatos</a></li>
+      <li><a href="ii5_sistemas_de_arreglos_de_discos_duros_redundantes.html" class="no-ch">II.5 Sistemas de arreglos de discos duros redundantes</a></li>
+      <li><a href="ii6_instalacin_de_sistema_operativo.html" class="no-ch">II.6 Instalación de sistema operativo</a></li>
+      <li><a href="proyecto_implementacin_de_un_sistema_operativo_en_virtualbox.html" class="no-ch">Proyecto: Implementación de un Sistema Operativo en VirtualBox</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="iii_comandos_bsicos_de_sistemas_operativos.html" class="current-page-parent daddy">III. Comandos básicos de sistemas operativos</a>
+   <ul>
+      <li id="active"><a href="iii1_lnea_de_comandos.html" class="active no-ch">III.1 Línea de comandos</a></li>
+      <li><a href="iii2_gestin_de_archivos_y_directorios.html" class="no-ch">III.2 Gestión de archivos y directorios</a></li>
+      <li><a href="iii3_gestin_de_repositorios.html" class="no-ch">III.3 Gestión de repositorios</a></li>
+      <li><a href="iii4_empacamiento_y_compresin.html" class="no-ch">III.4 Empacamiento y compresión</a></li>
+      <li><a href="iii5_configuracin_de_la_tarjeta_de_red.html" class="no-ch">III.5 Configuración de la tarjeta de red</a></li>
+   </ul>
+   </li>
+   <li><a href="iv_administracin_bsica_del_sistema_operativo.html" class="daddy">IV. Administración básica del sistema operativo</a>
+   <ul class="other-section">
+      <li><a href="iv1_gestin_de_usuarios_y_grupos.html" class="no-ch">IV.1 Gestión de usuarios y grupos</a></li>
+      <li><a href="iv2_permisos_especiales_superusuario.html" class="no-ch">IV.2 Permisos especiales (superusuario)</a></li>
+      <li><a href="iv3_respaldo_de_configuraciones.html" class="no-ch">IV.3 Respaldo de configuraciones</a></li>
+      <li><a href="iv4_respaldo_de_configuraciones.html" class="no-ch">IV.4 Respaldo de configuraciones</a></li>
+      <li><a href="iv5_polticas_de_seguridad.html" class="no-ch">IV.5 Políticas de seguridad</a></li>
+      <li><a href="iv6_estndares_para_la_solucin_de_problemas.html" class="no-ch">IV.6 Estándares para la solución de problemas</a></li>
+      <li><a href="iv7_bitcora_de_pruebas.html" class="no-ch">IV.7 Bitácora de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="v_instalacin_de_servicios_para_aplicaciones_web.html" class="daddy">V. Instalación de servicios para aplicaciones web</a>
+   <ul class="other-section">
+      <li><a href="v1_windows_subsystem_for_linux.html" class="no-ch">V.1 Windows subsystem for linux</a></li>
+      <li><a href="v2_configuracin_de_servidores_dns_dhcp_correos_web_ftp_tftp_ssh.html" class="no-ch">V.2 Configuración de Servidores DNS, DHCP, correos, web, FTP, TFTP, SSH</a></li>
+      <li><a href="v3_monitoreo_de_red.html" class="no-ch">V.3 Monitoreo de red</a></li>
+      <li><a href="v4_actualizacin_y_migracin_de_equipos_y_servicios.html" class="no-ch">V.4 Actualización y migración de equipos y servicios</a></li>
+      <li><a href="v5_scripts_bsicos_y_automatizacin.html" class="no-ch">V.5 Scripts básicos y automatización</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="iii_comandos_bsicos_de_sistemas_operativos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iii2_gestin_de_archivos_y_directorios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">III.1 Línea de comandos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id84">
+<div class="iDevice emphasis0" >
+<div id="ta84_170_2" class="block iDevice_content">
+<div class="exe-text"><p>La línea de comandos, también conocida como terminal o consola, es una interfaz de texto que permite a los usuarios interactuar con el sistema operativo mediante comandos. A diferencia de las interfaces gráficas, la línea de comandos ofrece un control más preciso y potente sobre el sistema, permitiendo automatizar tareas, gestionar archivos, configurar el sistema y mucho más.</p>
+<p>Nos enfocaremos en los comandos básicos de Linux Mint, una distribución basada en Ubuntu que utiliza el entorno de escritorio Cinnamon. Aprenderemos a identificar la funcionalidad de los principales comandos y cómo utilizarlos para realizar diversas tareas.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_aprenderaprender" id="id83">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_aprenderaprender.svg)"><h1 class="iDeviceTitle">1. Navegación en el Sistema de Archivos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta83_169_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>pwd</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>pwd</strong> (Print Working Directory)<br>El comando pwd muestra la ruta del directorio actual en el que te encuentras.</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ pwd
+/home/usuario</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>ls (List)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando <em>ls</em> lista los archivos y directorios en el directorio actual.</p>
+<p>Ejemplo:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ ls
+Documentos  Imágenes  Música  Vídeos</code></pre>
+</div>
+</div>
+<p><strong>Opciones comunes:</strong></p>
+<p>-l: Muestra los archivos en formato de lista larga.<br>-a: Muestra todos los archivos, incluyendo los ocultos.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ ls -la
+total 32
+drwxr-xr-x  5 usuario usuario 4096 Oct  1 12:34 .
+drwxr-xr-x  3 root    root    4096 Oct  1 12:00 ..
+-rw-r--r--  1 usuario usuario  220 Oct  1 12:00 .bash_logout
+-rw-r--r--  1 usuario usuario 3771 Oct  1 12:00 .bashrc</code></pre>
+</div>
+</div>
+</div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>cd (Change Directory)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando <em>cd</em> cambia el directorio actual.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ cd Documentos
+$ pwd
+/home/usuario/Documentos</code></pre>
+</div>
+</div>
+<p><strong>Ir al directorio home:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ cd ~</code></pre>
+</div>
+</div>
+<p><strong>Subir un nivel:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ cd ..</code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id85">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">2. Manipulación de Archivos y Directorios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta85_171_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>mkdir (Make Directory)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando mkdir crea un nuevo directorio.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ mkdir Proyectos
+$ ls
+Documentos  Imágenes  Música  Proyectos  Vídeos</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>touch</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando <em>touch</em> crea un archivo vacío o actualiza la fecha de modificación de un archivo existente.</p>
+<p>Ejemplo:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ touch archivo.txt
+$ ls
+archivo.txt  Documentos  Imágenes  Música  Proyectos  Vídeos</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>cp (Copy)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando <strong>cp</strong> copia archivos o directorios.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ cp archivo.txt Proyectos/
+$ ls Proyectos/
+archivo.txt</code></pre>
+</div>
+</div>
+<p>Copiar un directorio recursivamente:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ cp -r Documentos Proyectos/</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>mv (Move)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando mv mueve o renombra archivos y directorios.</p>
+<p>Mover un archivo:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ mv archivo.txt Proyectos/</code></pre>
+</div>
+</div>
+<p>Renombrar un archivo:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ mv archivo.txt nuevo_nombre.txt</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>rm (Remove)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando rm elimina archivos o directorios.</p>
+<p><strong>Eliminar un archivo:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ rm archivo.txt</code></pre>
+</div>
+</div>
+<p><strong>Eliminar un directorio recursivamente:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ rm -r Proyectos/</code></pre>
+</div>
+</div>
+<p><strong></strong></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_objetivos" id="id86">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_objetivos.svg)"><h1 class="iDeviceTitle">3. Visualización y Edición de Archivos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta86_172_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>cat (Concatenate)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando <em>cat</em> muestra el contenido de un archivo.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ cat archivo.txt
+Este es el contenido del archivo.</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>more y less</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los comandos more y less permiten visualizar archivos largos página por página.</p>
+<p><strong>Ejemplo</strong>:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ less archivo_largo.txt</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>nano</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>nano es un editor de texto en la terminal.</p>
+<p><strong>Ejemplo</strong>:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ nano archivo.txt</code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id87">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">4. Permisos y Propiedad de Archivos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta87_173_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>chmod (Change Mode)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando chmod cambia los permisos de un archivo o directorio.</p>
+<p>Ejemplo:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ chmod 755 script.sh</code></pre>
+</div>
+</div>
+<p><strong>Explicación</strong>:</p>
+<p>7 (propietario): lectura, escritura y ejecución.<br>5 (grupo y otros): lectura y ejecución.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>chown (Change Owner)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El comando <strong>chown</strong> cambia el propietario de un archivo o directorio.</p>
+<p>Ejemplo:</p>
+<div class="highlighted-code language-clike">
+<div>
+<pre><code>$ sudo chown usuario:grupo archivo.txt</code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="iii_comandos_bsicos_de_sistemas_operativos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iii2_gestin_de_archivos_y_directorios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

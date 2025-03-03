@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>II.4 Sistemas de archivos y formatos | Sistemas Operativos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irving Torres Viveros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas Operativos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas Operativos</a></li>
+   <li><a href="i_introduccin_a_sistemas_operativos.html" class="daddy">I. Introducción a Sistemas Operativos</a>
+   <ul class="other-section">
+      <li><a href="11_evolucin_de_los_sistemas_operativos.html" class="no-ch">1.1 Evolución de los sistemas operativos.</a></li>
+      <li><a href="actividad_11_lnea_de_tiempo.html" class="no-ch">Actividad 1.1 Línea de Tiempo</a></li>
+      <li><a href="12_tipos_de_licenciamiento.html" class="no-ch">1.2 Tipos de licenciamiento</a></li>
+      <li><a href="13_software_de_cdigo_abierto.html" class="no-ch">1.3 Software de código abierto</a></li>
+      <li><a href="14_fundamentos_de_so.html" class="no-ch">1.4 Fundamentos de SO</a></li>
+      <li><a href="actividad_12_cuadro_comparativo.html" class="no-ch">Actividad 1.2 Cuadro Comparativo</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="ii_instalacin_de_sistemas_operativos.html" class="current-page-parent daddy">II. Instalación de sistemas operativos</a>
+   <ul>
+      <li><a href="ii1_requerimientos_del_sistema_operativo.html" class="no-ch">II.1 Requerimientos del sistema operativo</a></li>
+      <li><a href="ii2_fundamentos_de_hardware.html" class="no-ch">II.2 Fundamentos de hardware</a></li>
+      <li><a href="ii3_tipos_de_particiones.html" class="no-ch">II.3 Tipos de particiones</a></li>
+      <li id="active"><a href="ii4_sistemas_de_archivos_y_formatos.html" class="active no-ch">II.4 Sistemas de archivos y formatos</a></li>
+      <li><a href="ii5_sistemas_de_arreglos_de_discos_duros_redundantes.html" class="no-ch">II.5 Sistemas de arreglos de discos duros redundantes</a></li>
+      <li><a href="ii6_instalacin_de_sistema_operativo.html" class="no-ch">II.6 Instalación de sistema operativo</a></li>
+      <li><a href="proyecto_implementacin_de_un_sistema_operativo_en_virtualbox.html" class="no-ch">Proyecto: Implementación de un Sistema Operativo en VirtualBox</a></li>
+   </ul>
+   </li>
+   <li><a href="iii_comandos_bsicos_de_sistemas_operativos.html" class="daddy">III. Comandos básicos de sistemas operativos</a>
+   <ul class="other-section">
+      <li><a href="iii1_lnea_de_comandos.html" class="no-ch">III.1 Línea de comandos</a></li>
+      <li><a href="iii2_gestin_de_archivos_y_directorios.html" class="no-ch">III.2 Gestión de archivos y directorios</a></li>
+      <li><a href="iii3_gestin_de_repositorios.html" class="no-ch">III.3 Gestión de repositorios</a></li>
+      <li><a href="iii4_empacamiento_y_compresin.html" class="no-ch">III.4 Empacamiento y compresión</a></li>
+      <li><a href="iii5_configuracin_de_la_tarjeta_de_red.html" class="no-ch">III.5 Configuración de la tarjeta de red</a></li>
+   </ul>
+   </li>
+   <li><a href="iv_administracin_bsica_del_sistema_operativo.html" class="daddy">IV. Administración básica del sistema operativo</a>
+   <ul class="other-section">
+      <li><a href="iv1_gestin_de_usuarios_y_grupos.html" class="no-ch">IV.1 Gestión de usuarios y grupos</a></li>
+      <li><a href="iv2_permisos_especiales_superusuario.html" class="no-ch">IV.2 Permisos especiales (superusuario)</a></li>
+      <li><a href="iv3_respaldo_de_configuraciones.html" class="no-ch">IV.3 Respaldo de configuraciones</a></li>
+      <li><a href="iv4_respaldo_de_configuraciones.html" class="no-ch">IV.4 Respaldo de configuraciones</a></li>
+      <li><a href="iv5_polticas_de_seguridad.html" class="no-ch">IV.5 Políticas de seguridad</a></li>
+      <li><a href="iv6_estndares_para_la_solucin_de_problemas.html" class="no-ch">IV.6 Estándares para la solución de problemas</a></li>
+      <li><a href="iv7_bitcora_de_pruebas.html" class="no-ch">IV.7 Bitácora de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="v_instalacin_de_servicios_para_aplicaciones_web.html" class="daddy">V. Instalación de servicios para aplicaciones web</a>
+   <ul class="other-section">
+      <li><a href="v1_windows_subsystem_for_linux.html" class="no-ch">V.1 Windows subsystem for linux</a></li>
+      <li><a href="v2_configuracin_de_servidores_dns_dhcp_correos_web_ftp_tftp_ssh.html" class="no-ch">V.2 Configuración de Servidores DNS, DHCP, correos, web, FTP, TFTP, SSH</a></li>
+      <li><a href="v3_monitoreo_de_red.html" class="no-ch">V.3 Monitoreo de red</a></li>
+      <li><a href="v4_actualizacin_y_migracin_de_equipos_y_servicios.html" class="no-ch">V.4 Actualización y migración de equipos y servicios</a></li>
+      <li><a href="v5_scripts_bsicos_y_automatizacin.html" class="no-ch">V.5 Scripts básicos y automatización</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ii3_tipos_de_particiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ii5_sistemas_de_arreglos_de_discos_duros_redundantes.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">II.4 Sistemas de archivos y formatos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id7">
+<div class="iDevice emphasis0" >
+<div id="ta7_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Puedes ver tus particiones, su tipo y formato al hacer clic con el botón derecho en el botón de inicio y seleccionando Administrador de discos.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_lee" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_179_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>Formato de particiones</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>No todas las particiones tienen por qué tener el mismo formato, ya que si vamos a dedicar una partición a Windows deberá estar en formato NTFS, si en otra vamos a instalar Linux deberá estar en Ext4 (que es el más común), incluso podemos tener una partición con cifrado o seguridad extra para las copias de seguridad o datos sensibles. Tienes que configurar cada una&nbsp;para su uso correcto.</p>
+<p><img class="lg-object lg-image" src="https://acf.geeknetic.es/imgw/imagenes/auto/2024/5/9/sbj-las-particiones-de-disco-duro-que-son-y-que-tipos-hay.png?f=webp&amp;s=b" width="641" height="481" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Cada sistema&nbsp;<strong>reconoce un formato de partición</strong>, no solo para la instalación, sino también para luego <strong>gestionar los archivos y poder almacenar datos</strong> que puedan ser reconocidos. Veamos los formatos de partición más usuales.</p>
+<p><img class="lg-object lg-image" src="https://acf.geeknetic.es/imgw/imagenes/auto/2024/5/9/8d1-las-particiones-de-disco-duro-que-son-y-que-tipos-hay.png?f=webp&amp;s=b" width="633" height="420" style="display: block; margin-left: auto; margin-right: auto;"></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_lee" id="id52">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Lee</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta52_175_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>FileSystem</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Un sistema de archivos es un esquema de programación que se utiliza para organizar y buscar archivos en un particionamiento.&nbsp;</p>
+<p>Mientras que: el sistema de archivos hace referencia a todos los archivos de la computadora.</p>
+<p>Lo que esto significa es que el filesystem es la estructura que se utiliza para ver, buscar y usar los archivos.&nbsp;Sin embargo, el sistema de archivos corresponde a todos los archivos individuales en esa estructura y al formato de los archivos.</p>
+<table border="1" style="width: 100%; height: 270px;">
+<tbody>
+<tr style="height: 90px;">
+<td style="width: 14.2642%; height: 90px;">FAT</td>
+<td style="width: 17.7177%; height: 90px;">Heredado</td>
+<td style="width: 68.018%; height: 90px;">Sistema de archivos heredado que se adoptó universalmente y se presentó en 12&nbsp;FAT12, 16&nbsp;FAT16&nbsp;y 32&nbsp;FAT32.</td>
+</tr>
+<tr style="height: 19px;">
+<td style="width: 14.2642%; height: 19px;">NTFS</td>
+<td style="width: 17.7177%; height: 19px;">Windows</td>
+<td style="width: 68.018%; height: 19px;">Nuevo sistema de archivos tecnológico: reemplazó a FAT en computadoras con Windows y todavía es necesario leer los particionamientos de Windows.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 14.2642%; height: 23px;">Ext2</td>
+<td style="width: 17.7177%; height: 23px;">Linux</td>
+<td style="width: 68.018%; height: 23px;">Segundo sistema de archivos extendido: este se utiliza en muchas distribuciones de Linux (distribuciones).</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 14.2642%; height: 23px;">Ext3</td>
+<td style="width: 17.7177%; height: 23px;">Linux</td>
+<td style="width: 68.018%; height: 23px;">Tercer sistema de archivos extendido: ¿es la opción predeterminada de las distribuciones de Ubuntu?&nbsp;Se agregó el registro.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 14.2642%; height: 23px;">Ext4</td>
+<td style="width: 17.7177%; height: 23px;">Linux</td>
+<td style="width: 68.018%; height: 23px;">Cuarto sistema de archivos extendido: muchas distribuciones de Linux utilizan este formato.&nbsp;Amplía los límites de almacenamiento.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 14.2642%; height: 23px;">JFS</td>
+<td style="width: 17.7177%; height: 23px;">Linux</td>
+<td style="width: 68.018%; height: 23px;">Sistema de archivos registrados: IBM introdujo este tipo de archivo y todavía se soporta, pero Ext4 lo reemplaza.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 14.2642%; height: 23px;">XFS</td>
+<td style="width: 17.7177%; height: 23px;">Linux o Irix</td>
+<td style="width: 68.018%; height: 23px;">La opción de 64 bits es la más soportada ahora como una opción en Red Hat.</td>
+</tr>
+</tbody>
+</table></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><iframe width="560" height="314" src="https://www.youtube.com/embed/ORUEX_a9pBM"></iframe></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>Sistemas de archivos</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Un&nbsp;sistema de archivos&nbsp;es una estructura jerárquica (árbol de archivos) de archivos y directorios.</p>
+<p>Este tipo de estructura se parece a un árbol invertido con las raíces arriba y las ramas abajo. Este árbol de archivos utiliza directorios para organizar los datos y los programas en grupos, lo que permite la gestión de varios directorios y archivos a la vez.</p>
+<p>Un sistema de archivos reside en un solo volumen lógico. Cada archivo y directorio pertenece a un sistema de archivos de un volumen lógico. Debido a esta estructura, algunas tareas se ejecutan con más eficacia en un sistema de archivos que en cada directorio del sistema de archivos. Por ejemplo, puede hacer copia de seguridad, mover o proteger la totalidad de un sistema de archivos. Puede crear una imagen de punto en el tiempo de un sistema de archivos JFS o un sistema de archivos JFS2, que recibe el nombre de&nbsp;instantánea.</p>
+<p>Para que un sistema de archivos sea accesible, se debe montar en un punto de montaje de directorio. Cuando se montan múltiples sistemas de archivos, se crea una estructura de directorios que presenta la imagen de un solo sistema de archivos. Se trata de una estructura jerárquica con una sola raíz. Esta estructura incluye los sistemas de archivos base y cualquier sistema de archivos que cree. Puede acceder a los sistemas de archivos local y remoto utilizando el mandato&nbsp;mount&nbsp;. Esto hace que el sistema de archivos esté disponible para el acceso de lectura y grabación desde el sistema. Normalmente, para montar o desmontar un sistema de archivos es necesario pertenecer a un grupo del sistema. Los sistemas de archivos se pueden montar automáticamente, si están definidos en el archivo&nbsp;/etc/filesystems&nbsp;. Puede desmontar un sistema de archivos local o remoto con el mandato&nbsp;umount&nbsp;, a menos que un usuario o proceso esté accediendo a ese sistema de archivos. Para obtener más información sobre el montaje de un sistema de archivos, consulte&nbsp;Montaje.</p>
+<p>Algunas de las tareas de gestión del sistema más importantes están relacionadas con los sistemas de archivos, de forma específica, cabría indicar lo siguiente:</p>
+<ul>
+<li>Asignación de espacio para los sistemas de archivos en los volúmenes lógicos.</li>
+<li>Creación de sistemas de archivos.</li>
+<li>Obtención de espacio disponible del sistema de archivos para los usuarios del sistema.</li>
+<li>Supervisión de la utilización del espacio del sistema de archivos.</li>
+<li>Realización de la copia de seguridad de los sistemas de archivos en previsión de una posible pérdida de datos en caso de que se produzca una anomalía en el sistema.</li>
+<li>Mantenimiento de los sistemas de archivos en un estado coherente</li>
+</ul></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p>Estas tareas debe realizarlas el administrador del sistema.</p>
+<div class="exe-fx exe-paginated">
+<h2>Conceptos de sistema de archivos</h2>
+<p>Para poder gestionar y configurar el sistema de archivos, debe comprender la organización básica y el contenido del árbol de archivos.</p>
+<p>Organización y contenido del árbol de archivos<br>El árbol de archivos organiza los archivos en directorios que contienen información similar. Esta organización facilita el montaje remoto de directorios y archivos.</p>
+<h2>Configuración de sistemas de archivos</h2>
+<p>Al añadir o configurar sistemas de archivos, puede seleccionar opciones en el contenedor de sistemas de archivos de las vías de acceso rápidas.</p>
+<h2>Gestión del sistema de archivos</h2>
+<p>Un sistema de archivos es una estructura de directorios completa, que incluye un directorio raíz y todos los subdirectorios y archivos que hay bajo él.</p>
+<p>Los sistemas de archivos están confinados a un solo volumen lógico. Parte de las tareas más importantes de gestión del sistema son relativas a sistemas de archivos, específicamente:</p>
+<p>Asignación de espacio para los sistemas de archivos en los volúmenes lógicos<br>Creación de sistemas de archivos<br>Obtención de espacio disponible del sistema de archivos para los usuarios del sistema<br>Supervisión de la utilización del espacio del sistema de archivos<br>Copia de seguridad de sistemas de archivos para evitar la pérdida de datos en caso de anomalías del sistema<br>Toma de instantánea para capturar una imagen de nivel de bloque coherente de un sistema de archivos en un punto del tiempo determinado<br>Mantenimiento de sistemas de archivos en un estado coherente.</p>
+<h2>Mantenimiento de sistemas de archivos</h2>
+<p>Las tareas más sencillas que puede necesitar al mantener sistemas de archivos se agrupan dentro de esta tabla.</p>
+<h2>Resolución de problemas de sistemas de archivos.</h2>
+<p>Utilice estos métodos de resolución de problemas para abordar algunos de los problemas básicos que pueden producirse en los sistemas de archivos. Si la información de resolución de problemas no resuelve su problema, póngase en contacto con el representante de servicio.</p>
+<p>Arreglo de un desbordamiento de sistema de archivos definido por el usuario<br>Utilice este procedimiento para arreglar un sistema de archivos definido por el usuario desbordado.<br>Arreglo de un sistema de archivos dañado<br>Los sistemas de archivos pueden dañarse cuando la información de i-nodo o superbloque para la estructura de directorios del sistema de archivos se daña.<br>Arreglo de un número mágico dañado en el superbloque del sistema de archivos<br>Si el superbloque de un sistema de archivos está dañado, no se puede acceder al sistema de archivos. Puede arreglar un número mágico dañado del superbloque del sistema de archivos.</p>
+<h2>Desbordamientos de disco</h2>
+<p>Se produce un desbordamiento de disco cuando demasiados archivos llenan el espacio asignado. Esto provocarlo un proceso descontrolado que cree muchos archivos innecesarios.</p>
+<h2>Montaje</h2>
+<p>El&nbsp;montaje&nbsp;hace que los sistemas de archivos, los archivos, los directorios, los dispositivos y los archivos especiales estén disponibles para utilizarlos en una ubicación determinada. Es la única manera de que un sistema de archivos pueda estar accesible.</p>
+<p>El mandato&nbsp;mount&nbsp;indica al sistema operativo que adjunte un sistema de archivos en un directorio especificado.</p>
+<p>Un&nbsp;<em>punto de montaje</em>&nbsp;es un directorio o archivo en el que se hace accesible un nuevo sistema de archivos, directorio o archivo. Para montar un sistema de archivos o un directorio, el punto de montaje debe ser un directorio; y para montar un archivo, el punto de montaje debe ser un archivo.</p>
+<h2>Tipos de sistema de archivos</h2>
+<p>&nbsp;Estos sistemas de archivos utilizan técnicas de registrar por diario en base de datos para mantener la coherencia estructural. Esto impide que se produzcan daños en el sistema de archivos cuando se interrumpe anormalmente el sistema.</p>
+<h2>Directorios</h2>
+<p>Un&nbsp;directorio&nbsp;es un tipo exclusivo de archivo que contiene sólo la información necesaria para acceder a archivos u otros directorios. En consecuencia, un directorio ocupa menos espacio que otros tipos de archivos.</p>
+<p>Los&nbsp;sistemas de archivos&nbsp;se componen de grupos de directorios y de los archivos que se encuentran dentro de los directorios. Los sistemas de archivos suelen representarse como un árbol invertido. El directorio raíz, indicado mediante el símbolo de barra inclinada (/), define un sistema de archivos y aparece en la parte superior de un diagrama en árbol de un sistema de archivos.</p>
+<p>Los directorios se ramifican en sentido descendente desde el directorio raíz del diagrama en árbol y pueden contener archivos y subdirectorios. La ramificación crea vías de acceso exclusivas en toda la estructura de directorios para cada objeto del sistema de archivos.</p>
+
+<p>Los conjuntos de archivos se almacenan en los directorios. Estos conjuntos de archivos suelen estar relacionados entre sí; su almacenamiento en una estructura de directorios permite mantenerlos organizados.</p>
+<p>Un&nbsp;archivo&nbsp;es un conjunto de datos que puede leerse o en el que puede grabarse. Un archivo puede ser un programa creado, texto escrito, datos adquiridos o un dispositivo utilizado. Los mandatos, impresoras, terminales, correspondencia y programas de aplicación se almacenan en archivos. Esto permite a los usuarios acceder a diversos elementos del sistema de forma uniforme y proporciona gran flexibilidad al sistema de archivos.</p>
+<p>Los directorios le permiten agrupar archivos y otros directorios para organizar el sistema de archivos en una jerarquía modular, que proporciona flexibilidad y profundidad a la estructura del sistema de archivos.</p>
+<p>Los directorios contienen entradas de directorio. Cada entrada contiene un nombre de archivo o de subdirectorio y un número de referencia de nodo de índice (número de&nbsp;inodo). Para aumentar la velocidad y mejorar la utilización del espacio del disco, los datos de un archivo se almacenan en diversas ubicaciones de la memoria del sistema. El número de inodo contiene las direcciones que se utilizan para localizar todos los bloques dispersos de datos que se asocian a un archivo. El número de inodo también registra otra información sobre el archivo, incluida la hora de modificación y acceso, las modalidades de acceso, el número de enlaces, el propietario del archivo y el tipo de archivo.</p>
+</div>
+<p><br><br><br><br><br><br><br><br></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><iframe width="560" height="314" src="https://www.youtube.com/embed/A_t4ZbTWC-g"></iframe></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_lee" id="id58">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta58_181_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>Linux</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Ext2</strong> (Second Extended filesystem): Este sistema de archivos fue creado para el kernel de este sistema operativo. Fue el sistema por defecto de las primeras distribuciones, no utilizaba Journaling, por lo que fue sustituido rápidamente por nuevas versiones.</p>
+<p><img class="lg-object lg-image" src="https://acf.geeknetic.es/imgw/imagenes/auto/2024/5/9/vvb-las-particiones-de-disco-duro-que-son-y-que-tipos-hay.png?f=webp&amp;s=b"></p>
+<ul>
+<li><strong>Ext3</strong> (Third Extended filesystem): Esta versión incorporó Journaling del que carecía Ext2, además Ext3 puede ser montado y usado como Ext2, y también permite pasar de Ext2 a Ext3 sin perder los datos. Tiene un bajo consumo de CPU y es seguro. Tiene un tamaño máximo de fichero de 2 TiB y de partición de 32 TiB.</li>
+<li><strong>Ext4</strong> (Fourth Extended filesystem): Este formato mejoró al Ext3 incluida la velocidad de lectura y escritura, y aumentó el tamaño máximo de volumen a los 1024 PiB. También es capaz de reducir la fragmentación con el uso de Extents. Ext4 también permite la conversión desde Ext3 sin necesidad de formatear.</li>
+</ul></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><iframe width="560" height="314" src="https://www.youtube.com/embed/ORUEX_a9pBM"></iframe></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>Windows</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>ExFAT</strong> (Extended File Allocation Table): Es un formato propiedad de Microsoft que se ha diseñado especialmente para unidades Flash. Este formato elimina el límite de su antecesor FAT32, además es compatible con las últimas versiones de Windows, Linux, MacOS, ChromeOS e incluso Android y iPad OS.<br><strong>FAT</strong> (File Allocation Table): FAT es un sistema de archivos muy sencillo, desarrollado para el antiguo MS-DOS está presente en la informática desde los disquetes que tenían pocos MB de capacidad. Aunque existen muchas más, este formato cuenta con 2 versiones más conocidas, FAT16 y FAT32.</p>
+<p><strong>FAT16</strong>: Este formato apareció en el año 1987 permitiendo particiones de hasta 4 GB, aunque inicialmente tenía más limitaciones permitiendo solo 2 GiB.<br><strong>FAT32</strong>: Este formato conservaba la compatibilidad con MS-DOS (y las primeras versiones de Windows) y ampliaba la capacidad de FAT16. Aunque su capacidad teórica es mayor, con Windows se limitó a 64 GiB, admitiendo archivos de hasta 4 GiB.</p>
+<p><img class="ls0hot" alt="Geeknetic Las Particiones de Disco Duro: Qué Son y Qué Tipos Hay 5" src="https://acf.geeknetic.es/imgw/imagenes/auto/2024/5/9/4hk-las-particiones-de-disco-duro-que-son-y-que-tipos-hay.png?f=webp" width="1346" height="893" loading="lazy"></p>
+<p><strong>NTFS</strong> (New Technology File System): Este sistema vino con Windows NT y está basado en HPFS de IBM/Microsoft y HFS de Apple. Cuenta con mejoras como compatibilidad con enlaces duros y un mayor tamaño de partición de hasta 16 TiB. MacOS es capaz de leer archivos en una partición con formato NTFS pero no puede escribir de forma nativa.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Unix</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>JFS</strong> (Journaled FileSystem): Creado originalmente para IBM, este tipo de formato no es comercial, sino que fue diseñado para obtener un gran rendimiento en servidores. Es compatible con Journaling y muy eficiente en la administración de directorios.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>MacOS</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul>
+<li><strong>HFS</strong> (Hierarchical FileSystem): Este sistema de archivos está desarrollado por Apple para sus primeras versiones de MacOS, y optimizado para disquetes y discos duros. Fue lanzado para sustituir al MFS ante la necesidad de unidades de mayor tamaño en los años 80. Este sistema utiliza un Árbol B capaz de realizar búsquedas rápidamente, independientemente del tamaño del sistema de archivos. Admite archivos de hasta 2 GB y particiones de hasta 2 TB.</li>
+<li><strong>HFS+</strong> (Hierarchical FileSystem Plus): Este formato ha mejorado al HFS permitiendo archivos más grandes, ficheros de hasta 255 caracteres y utiliza una tabla de asignación de 32 bits en lugar de los 16 de HFS. Es capaz de gestionar archivos o particiones de hasta 8 EiB.</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id50">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">Actividad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta50_156_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2>Elabora un mapa conceptual</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ol>
+<li>Identifica&nbsp;conceptos claves del tema</li>
+<li>Elabora el mapa conceptual
+<ol>
+<li>Se creativo utiliza diversos colores, dibujos, conectores, formas, etc.&nbsp;</li>
+</ol>
+</li>
+<li>Favor de poner datos de identificación :
+<ol>
+<li>Titulo</li>
+<li>Fecha</li>
+<li>Nombre completo</li>
+<li>Licenciatura, cuatrimestre, asignatura, unidad y tema.</li>
+</ol>
+</li>
+<li>Comparte tus ideas con los compañeros.</li>
+<li>Guarda en tu portafolio de evidencias.</li>
+</ol></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><h2 class="wp-block-heading" id="como-hacer-un-mapa-conceptual">¿Cómo hacer un mapa conceptual?</h2>
+<p>Para hacer un mapa conceptual, se deben seguir los siguientes pasos:</p>
+<ul class="wp-block-list is-style-check">
+<li><strong>Identificar</strong>. Se realiza una pregunta que plantee un problema o un posible abordaje para el tema. En una clase o una reunión de negocios, este paso sirve como disparador para que todos los integrantes participen. Por ejemplo:<span> </span><em>¿Cuáles son los elementos de la comunicación?<span> </span></em>De esta pregunta se desprende el concepto general. Por ejemplo:<span> </span><em>Los elementos de la comunicación.</em></li>
+<li><strong>Seleccionar</strong>. Una vez delimitado el enfoque del tema o el texto a estudiar, se escriben los conceptos más importantes en una lista. Estos conceptos deben ser los grandes puntos focales del tema tratado y no deben tener más de cuatro palabras. Otra opción es anotar los conceptos en tarjetas, para poder desplazarlos.</li>
+<li><strong>Agrupar</strong>. Se forman conjuntos de conceptos según su proximidad o su relación.</li>
+<li><strong>Ordenar</strong>. Una vez obtenidos los conjuntos, se ordenan los conceptos desde el más general al más específico o desde el más abstracto al más concreto, para obtener una jerarquía.</li>
+<li><strong>Representar</strong>. Se anotan los conceptos, encasillándolos en óvalos, recuadros o cualquier forma que permita visualizarlos mejor y comprender la jerarquía: los más generales pueden ser más grandes.</li>
+<li><strong>Conectar</strong>. Una vez establecida y representada la jerarquía, se interconectan los conceptos, mediante flechas o líneas sobre las que se deben escribir las palabras de enlace.</li>
+<li><strong>Comprobar</strong>. Una vez terminado todo, se leen los enlaces como si fueran proposiciones y se verifica que lo que dictan sea cierto, o sea, que se comprenda el sentido de lo que se ha querido expresar. Se corrigen posibles errores.</li>
+<li><strong>Reflexionar</strong>. Contemplando el mapa en su totalidad, se puede reformular el conocimiento expresado y establecer distintas relaciones entre los conceptos.</li>
+</ul>
+<p><strong><span><br><br>Fuente: <a href="https://concepto.de/mapa-conceptual/#ixzz8yeus06Pd">https://concepto.de/mapa-conceptual/#ixzz8yeus06Pd</a></span></strong></p>
+<p><strong>Saber más</strong></p>
+<p><a href="https://concepto.de/mapa-conceptual/">https://concepto.de/mapa-conceptual/</a></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="https://concepto.de/wp-content/uploads/2024/02/1-Mapa-conceptual-ESTRUCTURA-partes.jpg"></p>
+
+<p><img src="https://concepto.de/wp-content/uploads/2024/02/2-Mapa-conceptual-JERARQUICO-ecosistemas.jpg"></p>
+
+<p><img src="https://concepto.de/wp-content/uploads/2024/02/3-Mapa-conceptual-ARANA-nutrientes.jpg"></p>
+
+<p><img src="https://concepto.de/wp-content/uploads/2024/02/4-Mapa-conceptual-SECUENCIAL-digestion.jpg"></p>
+<p><img src="https://concepto.de/wp-content/uploads/2024/02/5-Mapa-conceptual-SISTEMICO-ciclo-del-agua.jpg"></p>
+<p><img src="https://concepto.de/wp-content/uploads/2024/02/6-Mapa-conceptual-EJEMPLO-cadena-trofica.jpg"></p>
+
+
+<button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id14">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Referencias</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_120_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://www.dell.com/support/kbdoc/es-ve/000131456/explicacion-sobre-los-tipos-y-definiciones-de-particiones-y-directorios-de-ubuntu-linux">https://www.dell.com/support/kbdoc/es-ve/000131456/explicacion-sobre-los-tipos-y-definiciones-de-particiones-y-directorios-de-ubuntu-linux</a></p>
+<p></p>
+<p><a href="https://www.xataka.com/basics/particiones-de-disco-duro-que-son-y-como-hacerlas-en-windows">https://www.xataka.com/basics/particiones-de-disco-duro-que-son-y-como-hacerlas-en-windows</a></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ii3_tipos_de_particiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ii5_sistemas_de_arreglos_de_discos_duros_redundantes.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
